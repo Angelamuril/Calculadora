@@ -1,0 +1,101 @@
+body {
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.calculadora {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+#pantalla {
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #333;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    background: #e0e0e0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #d5d5d5;
+}
+
+#error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilos para el botón de modo */
+#modoToggle {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background: #333;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#modoToggle:hover {
+    background: #555;
+}
+
+/* Modo nocturno */
+body.dark {
+    background: #1e1e1e;
+}
+
+body.dark .calculadora {
+    background: #2c2c2c;
+    color: #fff;
+}
+
+body.dark #pantalla {
+    background: #1a1a1a;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+body.dark button {
+    background: #444;
+    color: #fff;
+}
+
+body.dark button:hover {
+    background: #666;
+}
+
+body.dark #modoToggle {
+    background: #eee;
+    color: #000;
+}

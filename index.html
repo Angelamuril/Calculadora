@@ -1,0 +1,43 @@
+<!-- Alumnos: Carl Alejandro Ortiz Cevalloz -->.
+ <!--         Angela Elizabeth Murillo Mesia -->.
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="calculadora">
+        <button id="modoToggle" onclick="toggleModo()">Modo Nocturno</button>
+        <input type="text" id="pantalla" readonly>
+        <div class="botones">
+            <button onclick="limpiar()">C</button>
+            <button onclick="ingresarValor('/')">/</button>
+            <button onclick="ingresarValor('*')">*</button>
+            <button onclick="ingresarValor('-')">-</button>
+
+            <button onclick="ingresarValor('7')">7</button>
+            <button onclick="ingresarValor('8')">8</button>
+            <button onclick="ingresarValor('9')">9</button>
+            <button onclick="ingresarValor('+')">+</button>
+
+            <button onclick="ingresarValor('4')">4</button>
+            <button onclick="ingresarValor('5')">5</button>
+            <button onclick="ingresarValor('6')">6</button>
+            <button onclick="calcular()">=</button>
+
+            <button onclick="ingresarValor('1')">1</button>
+            <button onclick="ingresarValor('2')">2</button>
+            <button onclick="ingresarValor('3')">3</button>
+            <button onclick="ingresarValor('0')">0</button>
+            <button onclick="ingresarValor('.')">.</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
